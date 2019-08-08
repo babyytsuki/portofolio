@@ -22,8 +22,82 @@
         <meta name="theme-color" content="#ffffff">
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
     </head>
-    <body>
-        <h1>yeehaw</h1><br>
-        <p>Shake booty</p>
-    </body>
+<body>
+        <div class="navbar">
+            <a class="site-title" href="/">babyytsuki</a>
+                <div class="navlinks">
+                    <a href="/">illustrations</a>
+                    <a href="/">commission</a>
+                        <!--
+                        <div class="menuitems">
+                            <a href="/">terms&conditions</a>
+                            <a href="/">prices</a>
+                        </div> -->
+                        <a href="/">info</a>
+                        <!--
+                        <div class="menuitems">
+                            <a href="/">con schedule</a>
+                            <a href="/">faq</a>
+                        </div> -->
+                    <a href="https://babyytsuki.storenvy.com/">shop</a>
+                    <a href="/contact">contact</a>
+                </div>
+        </div>
+
+        <div class="header">
+            <img src="./resources/images/site/banner.png">
+        </div>
+
+        <div class="frontdesc">
+            <div class="intropic">
+                <img src="./resources/images/site/tamamo.jpg">
+            </div>
+            <div class="aboutme">
+                <h2>babyytsuki</h2>
+                <div class="socialsam">
+                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
+                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/pixiv.png"></a>
+                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
+                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
+                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/shop.png"></a>
+                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/email.png"></a>
+                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/ko-fi.png"></a>
+                </div>
+                <p>Hi! (o´ω`o)ﾉ I'm babyytsuki and I'm an illustrator! I love drawing cute girls as well as eating cup noodles and sleeping, I don't know. </p>
+            </div>
+        </div>
+
+    <div class="footer">
+        <div class="socials">
+            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
+            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/pixiv.png"></a>
+            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
+            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
+            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/shop.png"></a>
+            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/email.png"></a>
+            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/ko-fi.png"></a>
+         </div>
+        <p>© babytsuki 2019</p>
+    </div>
+    <script>
+
+function myFunction() {
+  document.getElementById("menu").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.menu')) {
+    var dropdowns = document.getElementsByClassName("drop-menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+    </script>
+</body>
 </html>
