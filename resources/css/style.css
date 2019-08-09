@@ -71,6 +71,7 @@
 
   body {
     margin: 0;
+    padding: 0;
     display: block;
   }
 
@@ -291,6 +292,21 @@
     margin: 0;
   }
 
+  .column img:hover .overlay {
+    display: absolute;
+  }
+
+  .overlay {
+    display: hidden;
+    width: auto;
+    height: auto;
+    background-color: #FFBAE3;
+    opacity: 0.5;
+    z-index: 6;
+  }
+
+  
+
   .column img {
     vertical-align: middle;
     width: 100%;
@@ -377,6 +393,43 @@
     cursor: pointer;
     color: #FFE0F5;
   }
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  backface-visibility: hidden;
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
 
   @media only screen and (max-width: 550px) and (pixel-density: 2), (orientation: portrait) {
 
