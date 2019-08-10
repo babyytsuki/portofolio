@@ -65,6 +65,7 @@
 
   html {
     background-color: #fff6fc;
+    color: #fff;
     margin: 0;
     padding: 0;
   }
@@ -76,13 +77,13 @@
   }
 
   h1 {
-      font-family: "Nunito", sans-serif;
+      font-family: 'Nunito', sans-serif;
       color: #FFBAE3;
       font-size: 2em;
   }
 
   h2 {
-      font-family: "Nunito", sans-serif;
+      font-family: 'Nunito', sans-serif;
       color: #FFBAE3;
   }
 
@@ -93,7 +94,7 @@
 
   a {
     font-family: 'Red Hat Display';
-    color: white;
+    color: #fff;
   }
 
   .navbar {
@@ -128,8 +129,7 @@
     text-decoration: none;
     font-size: 1.7em;
     padding: 0;
-    -webkit-margin: 0.4% 5% 90% 35%;
-    margin: 0.4% 5% 90% 35%;
+    margin: 5px 50px 0px 0px;
     right: 0;
     top: 0;
     position: absolute;
@@ -424,35 +424,8 @@
     color: #FFE0F5;
   }
 
-  .menuicon {
+  .menu {
     display: none;
-    right: 0;
-    top: 0;
-    padding: 0;
-    margin: 8px 37px 0px 0px;
-    font-size: 4em;
-    color: #fff;
-    z-index: 10;
-    text-decoration: none;
-  }
-
-  .slidemenu {
-    font-family: 'Nunito';
-    position: absolute;
-    height: auto;
-    width: 60%;
-    right: 0;
-    top: 0;
-    margin: 110px 0px 0px 0px;
-    padding: 3%;
-    display: inline-block;
-    color: #fff;
-    font-size: 5em;
-    background-color: #FFBAE3;
-    opacity: 0.85;
-    text-align: right;
-    text-decoration: none;
-    z-index: 11;
   }
 
   @media only screen and (max-width: 550px) and (pixel-density: 2), (orientation: portrait) {
@@ -548,4 +521,77 @@
       font-size: 1.5em;
     }
 
+
+
+
+    .menu{
+      position: absolute;
+      display: block;
+      color: #FFF;
+      margin: 0;
+      padding-right: 25px;
+      right: 20px;
+      top: 6px;
+      font-family: 'Nunito';
+      z-index: 100;
+      font-size: 4em;
+    }
+    
+    input[type=checkbox]{
+        display: none;
+    }
+    
+    label{
+        display: block;
+        width: 100%;
+        padding: 0;
+        cursor: pointer;
+        text-align: right;
+        user-select: none;
+    }
+    
+    ul{
+      position: absolute;
+      list-style: none;
+      text-align: right;
+      z-index: 1;
+      margin-top: 16px;
+      padding:0;
+      display: none;
+      float: right;
+      right: -5px;
   }
+  
+  ul li{
+    padding: 20px 30px;
+    background-color: #ffffff;
+    color: #FFBAE3;
+    cursor: pointer;
+    font-size: 80px;
+    text-align: right;
+    float: right;
+    margin: -16px;
+    min-width: 600px;
+    height: auto;
+  }
+  
+  ul li:hover{
+      color: #aae0ee;
+  }
+  
+  ul li a{
+      color: rgb(203, 186, 231);
+      text-decoration: none;
+      font-size: 58px;
+  }
+  
+  input[type=checkbox]:checked ~ ul {
+      display: block;
+  }
+
+  }
+
+
+
+
+  
