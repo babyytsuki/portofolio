@@ -77,23 +77,23 @@
   }
 
   h1 {
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito', Verdana;
       color: #FFBAE3;
       font-size: 2em;
   }
 
   h2 {
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito', Verdana;
       color: #FFBAE3;
   }
 
   p {
-      font-family: 'Red Hat Display', sans-serif;
+      font-family: 'Red Hat Display', Verdana;
       color: #808080;
   }
 
   a {
-    font-family: 'Red Hat Display';
+    font-family: 'Nunito', Verdana;
     color: #fff;
   }
 
@@ -109,7 +109,9 @@
   }
 
   .navbar .site-title {
-    font-family: 'Nunito';
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    font-family: 'Nunito', Verdana;
     position: relative;
     padding: 0;
     top: 9%;
@@ -140,9 +142,10 @@
   }
 
   .navlinks a {
+    -webkit-transition: color 200ms ease-in-out;
     color: #fff;
     text-decoration: none;
-    font-family: 'Nunito';
+    font-family: 'Nunito', Verdana;
     padding: 5px 6px 3px 6px;
     display: flex;
     flex-wrap: wrap;
@@ -206,8 +209,8 @@
   }
 
   .aboutme h2 {
-    font-size: 2em;
-    letter-spacing: 5px;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 3em;
     margin: 20% 0% 7% 0%;
     padding: 0;
   }
@@ -220,6 +223,8 @@
   }
 
   .kofibutt a {
+    -webkit-transition: color 200ms ease, background-color 200ms ease;
+    -moz-transition: color 200ms ease, background-color 200ms ease;
     background-color: #ded3f0;
     color: #BBA9DB;
     border-radius: 20px;
@@ -304,6 +309,8 @@
   }
   
   .overlay:before {
+    -webkit-transition: opacity 200ms ease-in-out;
+    -moz-transition: opacity 200ms ease-in-out;
     position: absolute;
     content:" ";
     width: 100%;
@@ -357,10 +364,12 @@
   }
 
   .button a {
+    -webkit-transition: background-color 100ms ease;
+    -moz-transition: background-color 100ms ease;
     display: block;
     background-color: #ffe7f7;
     color: #FFBAE3;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', Verdana;
     font-size: 2em;
     width: 5em;
     padding: 3px 6px;
@@ -378,9 +387,11 @@
   }
 
   .dropbtn {
+    -webkit-transition: color 100ms ease-in-out;
+    -moz-transition: color 100ms ease-in-out;
     color: #fff;
     text-decoration: none;
-    font-family: 'Nunito';
+    font-family: 'Nunito', Verdana;
     padding: 5px 6px 3px 6px;
     display: flex;
     flex-wrap: wrap;
@@ -402,6 +413,8 @@
   }
   
   .dropdown-content a {
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
     color: #FFBAE3;
     font-size: 0.9em;
     padding: 0.4em 0.8em;
@@ -485,7 +498,7 @@
     }
 
     .aboutme h2 {
-      font-size: 4em;
+      font-size: 6em;
       margin: 0.2em 0em 0.4em 0em;
     }
 
@@ -504,7 +517,7 @@
 
     .socialsam img,
     .socials img {
-      width: 3.5em;
+      width: 5em;
     }
 
     .socials {
@@ -521,9 +534,6 @@
       font-size: 1.5em;
     }
 
-
-
-
     .menu{
       position: absolute;
       display: block;
@@ -532,7 +542,7 @@
       padding-right: 25px;
       right: 20px;
       top: 6px;
-      font-family: 'Nunito';
+      font-family: 'Nunito', Verdana;
       z-index: 100;
       font-size: 4em;
     }
@@ -563,40 +573,41 @@
       right: -5px;
   }
   
-  ul li{
-    padding: 20px 30px;
-    background-color: #ffffff;
-    color: #FFBAE3;
-    cursor: pointer;
-    font-size: 80px;
-    text-align: right;
-    float: right;
-    margin: -16px;
-    min-width: 600px;
-    height: auto;
-  }
+    ul li{
+      padding: 20px 30px;
+      background-color: #ffffff;
+      color: #FFBAE3;
+      cursor: pointer;
+      font-size: 80px;
+      text-align: right;
+      float: right;
+      margin: -16px;
+      min-width: 600px;
+      height: auto;
+    }
   
-  ul li:hover{
-      color: #aae0ee;
-  }
+    ul li a:hover{
+      color: #84e2e9;
+    }
   
-  ul li a{
-      color: rgb(203, 186, 231);
+    ul li a{
+      color: #cbbae7;
       text-decoration: none;
       font-size: 58px;
-  }
+    }
   
-  input[type=checkbox]:checked ~ ul {
+    input[type=checkbox]:checked ~ ul {
       display: block;
-  }
+    }
 
-  input[type=checkbox] {
-  -webkit-appearance: none;
-  -khtml-appearance: none;
-  appearance: none;
-  }
+    input[type=checkbox] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -khtml-appearance: none;
+      appearance: none;
+      }
 
-  }
+    }
 
 
 
