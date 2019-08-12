@@ -89,7 +89,7 @@
 
   p {
       font-family: 'Red Hat Display', Verdana;
-      color: #808080;
+      color: #e0b0d9;
   }
 
   a {
@@ -104,8 +104,6 @@
 
   strong {
     font-style: bold;
-    color: #fff;
-    background-color: #CFC1E8;
   }
 
   .navbar {
@@ -227,7 +225,7 @@
   }
 
   .aboutme p {
-    color: #808080;
+    color: rgb(201, 154, 194);
     text-align: left;
     font-size: 1em;
     margin-bottom: 1.8em;
@@ -377,13 +375,13 @@
   }
 
   .paragraph p {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .paragraph li {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Red Hat Display', Verdana;
-    color: #808080;
+    color: #e0b0d9;
   }
 
   .paragraph h2 {
@@ -408,7 +406,7 @@
   }
 
   td {
-    color: #808080;
+    color: #e0b0d9;
     font-size: 1.2em;
     padding: 1% 3%;
   }
@@ -417,7 +415,44 @@
     border-top: 2px dashed #FFBAE3;
     width: 25%;
     padding: 0;
-    margin: 1.5em 0em;
+    margin: 1.5em 0em 2em 0em;
+  }
+
+  .sample-container {
+    width: 100%;
+    height: 60%;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 2.5em 0em;
+    float: none;
+    overflow: hidden;
+  }
+
+  .sample-pic {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .sample-desc {
+    width: 50%;
+    padding: 5% 5% 0% 2%;
+    height: auto;
+  }
+
+  .sample-desc h2 {
+    letter-spacing: 3px;
+    font-size: 2.5em;
+  }
+
+  .sample-desc p {
+    font-size: 1.3em;
+  }
+
+  .sample-pic img {
+    width: 100%;
+    padding: 0;
+    border-radius: 15px;
   }
 
   .button {
@@ -435,7 +470,7 @@
     -webkit-transition: background-color 100ms ease;
     -moz-transition: background-color 100ms ease;
     display: block;
-    background-color: #ffe7f7;
+    background-color: #ffe3f6;
     color: #FFBAE3;
     font-family: 'Nunito', Verdana;
     font-size: 2em;
@@ -583,6 +618,10 @@
       overflow: scroll;
     }
 
+    .sample-pic {
+      width: 60%;
+    }
+
     .socialsam img,
     .socials img {
       width: 5em;
@@ -668,8 +707,10 @@
         padding: 0;
         cursor: pointer;
         text-align: right;
+        margin-top: -17px;
         user-select: none;
         color: #fff;
+        font-size: 1.5em;
     }
     
     ul{
