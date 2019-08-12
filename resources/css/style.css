@@ -97,6 +97,17 @@
     color: #fff;
   }
 
+  em {
+    font-style: italic;
+    color: #BBA9DB;
+  }
+
+  strong {
+    font-style: bold;
+    color: #fff;
+    background-color: #CFC1E8;
+  }
+
   .navbar {
     width: 100%;
     height: 62px;
@@ -146,7 +157,7 @@
     color: #fff;
     text-decoration: none;
     font-family: 'Nunito', Verdana;
-    padding: 5px 6px 3px 6px;
+    padding: 5px 8px 3px 8px;
     display: flex;
     flex-wrap: wrap;
     transition: color 200ms ease-in-out;
@@ -352,12 +363,69 @@
     display: block;
   }
 
+  .paragraph {
+    width: 76%;
+    padding: 2%;
+    align-content: center;
+    align-items: center;
+    margin: 5% 12% 1% 12%;
+  }
+
+  .paragraph h1 {
+    font-size: 2em;
+    letter-spacing: 8px;
+  }
+
+  .paragraph p {
+    font-size: 1em;
+  }
+
+  .paragraph li {
+    font-size: 1em;
+    font-family: 'Red Hat Display', Verdana;
+    color: #808080;
+  }
+
+  .paragraph h2 {
+    font-size: 1.5em;
+    color: #BBA9DB;
+  }
+
+  table {
+    font-size: 1em;
+    font-family: 'Nunito', Verdana;
+    text-align: center;
+    justify-items: center;
+    width: 50%;
+    padding: 0;
+    margin: 4% 25%;
+  }
+
+  th {
+    color: #BBA9DB;
+    font-size: 1.7em;
+    padding: 1% 3%;
+  }
+
+  td {
+    color: #808080;
+    font-size: 1.2em;
+    padding: 1% 3%;
+  }
+
+  hr {
+    border-top: 2px dashed #FFBAE3;
+    width: 25%;
+    padding: 0;
+    margin: 1.5em 0em;
+  }
+
   .button {
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: baseline;
     justify-content: space-around;
-    margin: 3em 0em;
+    margin: 8% 0% 6% 0%;
     width: 90%;
     position: relative;
     right: -5%;
@@ -369,7 +437,7 @@
     display: block;
     background-color: #ffe7f7;
     color: #FFBAE3;
-    font-family: 'Red Hat Display', Verdana;
+    font-family: 'Nunito', Verdana;
     font-size: 2em;
     width: 5em;
     padding: 3px 6px;
@@ -377,7 +445,7 @@
     position: relative;
     text-decoration: none;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: background-color 100ms ease;
   }
 
@@ -392,7 +460,7 @@
     color: #fff;
     text-decoration: none;
     font-family: 'Nunito', Verdana;
-    padding: 5px 6px 3px 6px;
+    padding: 5px 8px 3px 8px;
     display: flex;
     flex-wrap: wrap;
     transition: color 100ms ease-in-out;
@@ -546,6 +614,48 @@
       z-index: 100;
       font-size: 4em;
     }
+
+    hr {
+      border-top: 5px dashed #FFBAE3;
+      width: 50%;
+    }
+
+    .paragraph {
+      margin: 10% 12%;
+    }
+
+    .paragraph h1 {
+      font-size: 3.7em;
+    }
+
+    .paragraph h2 {
+      font-size: 2.5em;
+    }
+
+    .paragraph p {
+      font-size: 2em;
+    }
+
+    .paragraph li {
+      font-size: 2em;
+    }
+
+    table {
+      width: 70%;
+      margin: 4% 15%;
+    }
+
+    th {
+      font-size: 2.5em;
+    }
+
+    td {
+      font-size: 2em;
+    }
+
+    .button a {
+      font-size: 4em;
+    }
     
     input[type=checkbox]{
         display: none;
@@ -559,6 +669,7 @@
         cursor: pointer;
         text-align: right;
         user-select: none;
+        color: #fff;
     }
     
     ul{
