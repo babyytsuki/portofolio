@@ -154,14 +154,15 @@
     padding: 0;
     top: 9%;
     left: 5%;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-decoration: none;
     font-size: 2em;
-    transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
   }
 
   .site-title:hover {
     color: #FFE0F5;
+    letter-spacing: 10px;
   }
 
   .navlinks {
@@ -206,6 +207,11 @@
     position: relative;
     z-index: 1;
   }
+
+  .parallax-window {
+    min-height: 630px;
+    background: transparent;
+}
 
   .frontdesc {
     width: 70%;
@@ -270,7 +276,7 @@
     margin: 2em 0em 0em 0em;
     text-decoration: none;
     font-size: 1em;
-    transition: color 200ms ease, background-color 200ms ease;
+    transition: color 200ms 100ms ease, background-color 200ms 100ms ease;
   }
 
   .kofibutt a:hover {
@@ -347,15 +353,15 @@
   }
   
   .overlay:before {
-    -webkit-transition: opacity 200ms ease-in-out;
-    -moz-transition: opacity 200ms ease-in-out;
+    -webkit-transition: opacity 200ms 50ms ease-in-out;
+    -moz-transition: opacity 200ms 50ms ease-in-out;
     position: absolute;
     content:" ";
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 999;
     opacity: 0;
-    transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms 100ms ease-in-out;
   }
   
   .overlay:hover:before {
@@ -370,7 +376,7 @@
   .lightbox {
     display: none;
     position: fixed;
-    z-index: 20;
+    z-index: 9999;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -467,8 +473,8 @@
   }
 
   .button a {
-    -webkit-transition: background-color 100ms ease;
-    -moz-transition: background-color 100ms ease;
+    -webkit-transition: background-color 150ms 80ms ease, color 150ms 80ms ease;
+    -moz-transition: background-color 150ms 80ms ease, color 150ms 80ms ease;
     display: block;
     background-color: #ffe3f6;
     color: #FFBAE3;
@@ -481,7 +487,7 @@
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
-    transition: background-color 100ms ease;
+    transition: background-color 150ms 80ms ease, color 150ms 80ms ease;
   }
 
   .button a:hover {
@@ -490,15 +496,15 @@
   }
 
   .dropbtn {
-    -webkit-transition: color 100ms ease-in-out;
-    -moz-transition: color 100ms ease-in-out;
+    -webkit-transition: color 100ms 50ms ease-in-out;
+    -moz-transition: color 100ms 50ms ease-in-out;
     color: #fff;
     text-decoration: none;
     font-family: 'Nunito', Verdana;
     padding: 5px 8px 3px 8px;
     display: flex;
     flex-wrap: wrap;
-    transition: color 100ms ease-in-out;
+    transition: color 100ms 50ms ease-in-out;
   }
   
   .dropdown {
@@ -524,11 +530,12 @@
     background-color: #fff;
     text-decoration: none;
     display: block;
-    transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out, all 200ms 100ms ease;
   }
 
   .dropdown-content a:hover {
     color: #84e2e9;
+    background-color: #ecfcff;
   }
   
   .dropdown:hover .dropdown-content {
