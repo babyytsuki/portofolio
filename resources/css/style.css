@@ -568,6 +568,10 @@
     text-align: center;
   }
 
+  html.sr .load-hidden {
+    visibility: hidden;
+}
+
   @media only screen and (max-width: 600px) and (pixel-density: 2), (orientation: portrait) {
 
     .frontdesc {
@@ -630,7 +634,7 @@
     }
 
     .row {
-      margin-top: 5%;
+      margin-top: 5.5%;
     }
 
     .column {
@@ -674,7 +678,7 @@
       right: 20px;
       top: 6px;
       font-family: 'Nunito', Verdana;
-      z-index: 100;
+      z-index: 99999;
       font-size: 4em;
     }
 
@@ -722,11 +726,13 @@
     
     input[type=checkbox]{
         display: none;
+        z-index: 999999;
     }
     
     label{
         -webkit-user-select: none;
         display: block;
+        z-index: 999999;
         width: 100%;
         padding: 0;
         cursor: pointer;
@@ -759,6 +765,7 @@
       float: right;
       margin: -16px;
       min-width: 600px;
+      z-index: 999999;
       height: auto;
     }
   
