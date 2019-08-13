@@ -568,10 +568,6 @@
     text-align: center;
   }
 
-  html.sr .load-hidden {
-    visibility: hidden;
-}
-
   @media only screen and (max-width: 600px) and (pixel-density: 2), (orientation: portrait) {
 
     .frontdesc {
