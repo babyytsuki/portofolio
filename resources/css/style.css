@@ -143,12 +143,12 @@
     background-color: #FFBAE3;
     overflow: stretch;
     justify-content: baseline;
-    z-index: 5;
+    z-index: 999;
   }
 
   .navbar .site-title {
-    -webkit-transition: color 200ms ease-in-out;
-    -moz-transition: color 200ms ease-in-out;
+    -webkit-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
+    -moz-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
     font-family: 'Nunito', Verdana;
     position: relative;
     padding: 0;
@@ -182,9 +182,11 @@
 
   .navlinks a {
     -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
     color: #fff;
     text-decoration: none;
     font-family: 'Nunito', Verdana;
+    z-index: 9999;
     padding: 5px 8px 3px 8px;
     display: flex;
     flex-wrap: wrap;
@@ -267,8 +269,8 @@
   }
 
   .kofibutt a {
-    -webkit-transition: color 200ms ease, background-color 200ms ease;
-    -moz-transition: color 200ms ease, background-color 200ms ease;
+    -webkit-transition: color 200ms 100ms ease, background-color 200ms 100ms ease;
+    -moz-transition: color 200ms 100ms ease, background-color 200ms 100ms ease;
     background-color: #ded3f0;
     color: #BBA9DB;
     border-radius: 20px;
@@ -290,6 +292,8 @@
     width: 100%;
     height: 16%;
     background-color: #FFBAE3;
+    margin: 1em 0em 0em 0em;
+    z-index: 99999999;
     text-align: center;
   }
 
@@ -339,7 +343,7 @@
     max-width: 33.3%;
     height: auto;
     padding: 0;
-    margin: 0;
+    margin: 0em 0em 2.5em 0em;
   }
 
   .column img {
@@ -353,15 +357,15 @@
   }
   
   .overlay:before {
-    -webkit-transition: opacity 200ms 50ms ease-in-out;
-    -moz-transition: opacity 200ms 50ms ease-in-out;
+    -webkit-transition: opacity 200ms 70ms ease-in-out;
+    -moz-transition: opacity 200ms 70ms ease-in-out;
     position: absolute;
     content:" ";
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 99;
     opacity: 0;
-    transition: opacity 200ms 100ms ease-in-out;
+    transition: opacity 200ms 70ms ease-in-out;
   }
   
   .overlay:hover:before {
@@ -376,13 +380,14 @@
   .lightbox {
     display: none;
     position: fixed;
-    z-index: 9999;
-    width: 100%;
+    z-index: 99999999;
+    min-width: 100%;
     height: 100%;
     text-align: center;
     background: rgba(22, 11, 18, 0.85);
     overflow: scroll;
     bottom: 0;
+    left: 0;
   }
   
   .lightbox img {
@@ -518,13 +523,14 @@
     vertical-align: middle;
     min-width: 15%;
     font-size: 1em;
-    z-index: 4;
+    z-index: 99999;
   }
   
   .dropdown-content a {
-    -webkit-transition: color 200ms ease-in-out;
-    -moz-transition: color 200ms ease-in-out;
+    -webkit-transition: color 200ms ease-in-out, all 200ms 100ms ease;
+    -moz-transition: color 200ms ease-in-out, all 200ms 100ms ease;
     color: #FFBAE3;
+    z-index: 99999;
     font-size: 0.9em;
     padding: 0.4em 0.8em;
     background-color: #fff;
@@ -536,6 +542,7 @@
   .dropdown-content a:hover {
     color: #84e2e9;
     background-color: #ecfcff;
+    z-index: 99999;
   }
   
   .dropdown:hover .dropdown-content {
@@ -549,6 +556,16 @@
 
   .menu {
     display: none;
+  }
+
+  .nothing {
+    padding: 0;
+    margin: 20% 25%;
+    width: 50%;
+    font-family: 'Nunito', Verdana;
+    color: #BBA9DB;
+    font-size: 3.5em;
+    text-align: center;
   }
 
   @media only screen and (max-width: 600px) and (pixel-density: 2), (orientation: portrait) {
