@@ -21,6 +21,8 @@
         <meta name="msapplication-TileImage" content="./resources/images/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
             <div class="navbar">
@@ -78,14 +80,15 @@
                     </a>    -->
 
             <div class="column">
-                <a href="#hk416">
-                    <div class="overlay pink">
-                        <img src="./resources/images/site/illustrations/hk416.jpg" class="thumbnail">
-                    </div>
-                </a>
-                    <a href="#_" class="lightbox" id="hk416">
-                        <img src="./resources/images/site/illustrations/hk416.jpg">
-                    </a>
+
+                    <a href="#hk416">
+                            <div class="overlay pink">
+                                <img src="./resources/images/site/illustrations/hk416.jpg" class="thumbnail">
+                            </div>
+                        </a>
+                        <a href="#_" class="lightbox" id="hk416">
+                            <img src="./resources/images/site/illustrations/hk416.jpg">
+                        </a>
 
                 <a href="#madokami">
                     <div class="overlay pink">
@@ -136,5 +139,11 @@
          </div>
         <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
     </div>
+    <script>
+        ScrollReveal().reveal('.thumbnail', { duration: 700, delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('p', { delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('h2', { delay: 70, reset: true });
+    </script>
 </body>
 </html>

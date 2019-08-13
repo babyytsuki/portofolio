@@ -22,6 +22,9 @@
         <meta name="theme-color" content="#ffffff">
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap&subset=chinese-simplified" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="./resources/js/parallaxscroll.js"></script>
     </head>
 <body>
         <div class="navbar">
@@ -65,9 +68,8 @@
         </div>
 
         <!-- owo why are yew wooking at mwai codes owo? -->
-        
-        <div class="header">
-            <img src="./resources/images/site/banner.png">
+
+        <div class="parallax-window header" data-parallax="scroll" data-image-src="./resources/images/site/banner.png">
         </div>
         <div class="frontdesc">
             <div class="intropic">
@@ -83,7 +85,7 @@
             <a href="https://babyytsuki.storenvy.com/"><img src="./resources/images/site/shop.png"></a>
             <a href="mailto:babyytsuki@gmail.com"><img src="./resources/images/site/email.png"></a>
                 </div>
-                    <p>Hi! (o´ω`o)ﾉ I'm babyytsuki and I'm an illustrator! I love drawing cute girls as well as eating cup noodles and sleeping, I don't know. </p>
+                <p>Hi! (o´ω`o)ﾉ I'm babyytsuki and I'm an illustrator! I love drawing cute girls as well as eating cup noodles and sleeping, I don't know. </p>
                 <div class="kofibutt">
                     <a class href="https://ko-fi.com/babyytsuki/">support me on ko-fi!</a>
                 </div>
@@ -102,5 +104,12 @@
          </div>
         <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
     </div>
+    <script>
+        ScrollReveal().reveal('img', { duration: 700, delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('p', { delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('h2', { delay: 70, reset: true });
+        ScrollReveal().reveal('.kofibutt', { delay: 70, scale: 0.85, reset: true });
+    </script>
 </body>
 </html>

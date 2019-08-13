@@ -21,7 +21,7 @@
         <meta name="msapplication-TileImage" content="./resources/images/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
-    </head>
+        <script src="https://unpkg.com/scrollreveal"></script>
     <body>
         <div id="main-content">
             <div class="navbar">
@@ -138,5 +138,11 @@
         <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
     </div>
 </div>
+    <script>
+        ScrollReveal().reveal('img', { duration: 700, delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('p', { delay: 70, scale: 0.85, reset: true });
+        ScrollReveal().reveal('h2', { delay: 70, reset: true });
+    </script>
 </body>
 </html>
