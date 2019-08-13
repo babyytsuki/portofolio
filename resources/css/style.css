@@ -59,6 +59,10 @@
     secondary: #BBA9DB
   */
 
+  div #main-content {
+    display: none;
+  }
+
   * {
     box-sizing: border-box;
   }
