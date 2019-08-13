@@ -1,0 +1,21 @@
+art gallery: 
+        <!--
+        <div class="row"></div>
+            
+            <a href="#id">
+                <div class="overlay pink">
+                    <img src="" class="thumbnail">
+                </div>
+            </a>
+                <a href="#_" class="lightbox" id="id">
+                    <img src="">
+                    </a>    
+                    -->
+
+gallery 'next' and 'prev' button:
+
+        <!-- 
+        <div class="button">
+                <a href="">next</a>
+        </div>
+        -->
