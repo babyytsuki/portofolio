@@ -21,7 +21,8 @@
         <meta name="msapplication-TileImage" content="./resources/images/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <body>
         <div id="main-content">
             <div class="navbar">
@@ -70,7 +71,7 @@
         <div class="row"></div>    
             <div class="column">
                 <a href="#id">
-                        <div class="overlay pink">
+                        <div class="overlay pink" data-aos="fade-up">
                             <img src="" class="thumbnail">
                         </div>
                     </a>
@@ -86,7 +87,7 @@
             </div>
         </div> -->
 
-        <div class="nothing">
+        <div class="nothing" data-aos="fade-up">
             ｡:ﾟ(;´∩`;)ﾟ:｡<br>
             there's nothing here... yet
         </div>
@@ -104,12 +105,12 @@
         <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
     </div>
 </div>
-    <script>
-        ScrollReveal().reveal('.thumbnail', { duration: 700, scale: 0.85, reset: true });
-        ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
-        ScrollReveal().reveal('p', { delay: 70, scale: 0.85, reset: true });
-        ScrollReveal().reveal('h2', { delay: 70, reset: true });
-        ScrollReveal().reveal('.nothing', { delay: 70, reset: true });
-    </script>
+<script>
+    AOS.init({
+    duration: 700,
+    delay: 50,
+    easing: 'ease-in-out',
+    });
+</script>
 </body>
 </html>
