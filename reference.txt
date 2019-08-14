@@ -3,7 +3,7 @@ art gallery:
         <div class="row"></div>
             
             <a href="#id">
-                <div class="overlay pink">
+                <div class="overlay pink" data-aos="fade-up">
                     <img src="" class="thumbnail">
                 </div>
             </a>
@@ -15,7 +15,7 @@ art gallery:
 gallery 'next' and 'prev' button:
 
         <!-- 
-        <div class="button">
+        <div class="button" data-aos="fade-up">
                 <a href="">next</a>
         </div>
         -->
