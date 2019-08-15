@@ -630,11 +630,12 @@
     }
 
     .row {
-      margin-top: 5.5%;
+      margin: 5.5% 0% 5% 0%;
     }
 
     .column {
       max-width: 100%;
+      margin: 0;
     }
 
     .lightbox img {
