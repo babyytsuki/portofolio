@@ -560,7 +560,7 @@
 
   .nothing {
     padding: 0;
-    margin: 20% 25%;
+    margin: 10% 25% 4% 25%;
     width: 50%;
     font-family: 'Nunito', Verdana;
     color: #BBA9DB;
@@ -568,7 +568,7 @@
     text-align: center;
   }
 
-  @media only screen and (max-width: 600px) and (pixel-density: 2), (orientation: portrait) {
+  @media only screen and (max-width: 1200px) and (orientation: portrait) {
 
     .frontdesc {
       width: 100%;
@@ -745,10 +745,9 @@
       list-style: none;
       text-align: right;
       z-index: 1;
-      margin-top: 16px;
+      margin-top: 6px;
       padding:0;
       display: none;
-      float: right;
       right: -5px;
   }
   
