@@ -589,7 +589,7 @@
     background: #FFBAE3;
   }
 
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 767px) and (orientation: portrait) {
 
     .frontdesc {
       width: 100%;
