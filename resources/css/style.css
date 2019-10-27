@@ -92,6 +92,17 @@
       color: #e0b0d9;
   }
 
+  p a {
+    font-weight: 700;
+    color: #cbbae7;
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  }
+
+  p a:hover {
+    color: #fff;
+    background-color: #d0c3e7;
+  }
+
   a {
     font-family: 'Nunito', Verdana;
     color: #fff;
@@ -568,7 +579,17 @@
     text-align: center;
   }
 
-  @media only screen and (max-width: 1200px) and (orientation: portrait) {
+  ::-moz-selection {
+    color: #fff;
+    background: #FFBAE3;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #FFBAE3;
+  }
+
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
 
     .frontdesc {
       width: 100%;
