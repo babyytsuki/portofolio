@@ -769,6 +769,76 @@
     .button a {
       font-size: 4em;
     }
+
+span {
+  right: 35px;
+  top: -30px;
+  z-index: 99999;
+  font-size: 8em;
+  color: #fff;
+  display: block;
+  position: absolute;
+}
+
+.sidenav ul {
+  font-family: 'Nunito';
+  font-size: 1.5em;
+  list-style: none;
+  padding: 0em 1em;
+}
+
+    /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 999999999; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  color: #CFC1E8;
+  font-size: 4em;
+  background-color: hsl(0, 0%, 100%, 0.9); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 2em 0em;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+  padding: 0em 1em;
+  text-decoration: none;
+  font-size: 0.7em;
+  color: #FFBAE3;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #6d6d6d;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  font-size: 1.5em;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFBAE3;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 25px;
+  bottom: 30%;
+  transition: all 300ms ease-in-out 50ms;
+}
+
+.sidenav .closebtn:hover {
+  background-color: #CFC1E8;
+  color: #fff;
+  opacity: 0;
+}
+
+    /*
     
     input[type=checkbox]{
         display: none;
@@ -834,6 +904,8 @@
       -khtml-appearance: none;
       appearance: none;
       }
+
+    */
 
     }
 
