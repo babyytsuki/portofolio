@@ -55,21 +55,21 @@
                     </div>
             </div>
 
-            <div class="menu">
-                    <input type="checkbox" id="checkbox-toggle">
-                        <label for="checkbox-toggle">≡</label>
-                        <ul>
-                        <li>portfolio</li>
-                            <li><a href="./illustration.html">illustration</a></li>
-                            <li><a href="./concept-art.html">concept art</a></li>
-                            <li><a href="./sample-merch.html">sample merch</a></li>
-                            <li><a href="./design.html">design</a></li>
-                        <li>commissions</li>
-                            <li><a href="./terms-and-conditions.html">terms & conditions</a></li>
-                            <li><a href="./pricing.html">pricing</a></li>
-                        <li><a href="./info.html">info</a></li>
-                        </ul>
-                </div>
+            <div id="mySidenav" class="sidenav">
+                <ul>
+                    <li>portfolio</li>
+                        <li><a href="./illustration.html">illustration</a></li>
+                        <li><a href="./concept-art.html">concept art</a></li>
+                        <li><a href="./sample-merch.html">sample merch</a></li>
+                        <li><a href="./design.html">design</a></li>
+                    <li>commissions</li>
+                        <li><a href="./terms-and-conditions.html">terms & conditions</a></li>
+                        <li><a href="./pricing.html">pricing</a></li>
+                    <li><a href="./info.html">info</a></li>
+                    </ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+              </div>
+              <span id="menu" onclick="openNav()">≡</span>
 
         <!-- owo why are yew wooking at mwai codes owo? --> 
 
@@ -141,6 +141,15 @@
         delay: 50,
         easing: 'ease-in-out',
         });
+
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
     </script>
 </body>
 </html>
