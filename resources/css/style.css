@@ -162,8 +162,6 @@
     position: fixed;
     top: 0;
     background-color: #FFBAE3;
-    overflow: stretch;
-    justify-content: baseline;
     z-index: 999;
   }
 
@@ -194,7 +192,8 @@
     margin: 5px 50px 0px 0px;
     right: 0;
     top: 0;
-    position: absolute;
+    float: right;
+    position: relative;
     display: inline-flex;
     text-align: center;
     justify-content: space-around;
@@ -623,27 +622,28 @@
 }
 
 body {
-  overflow: hidden;
+overflow: hidden;
 }
 
 body.visibleSplash {
 overflow: visible !important;
 }
+
 .splashScreen {
 width: 100%;
- height: 100%;
+height: 100%;
 position: absolute;
 top: 0;
 left: 0;
 background: #fff;
-  overflow: hidden;
-  z-index: 9999999999999999;
+z-index: 999;
 }
+
 .loadingContainer {
-  width: 100px;
+width: 100px;
 position: absolute;
 top: 50%;
-  left: 50%;
+left: 50%;
 transform: translate(-50%, -50%);
 text-align: center;
 overflow: hidden;
@@ -658,13 +658,15 @@ opacity: 0;
 .loadingBarContainer {
 width: 100%;
 background: #ffeaf7;
-  height: 4px;
-  border-radius: 100px;
+height: 4px;
+border-radius: 100px;
 display: block;
-  overflow: hidden;
+overflow: hidden;
+z-index: 99;
 }
+
 .loadingbar {
-  animation: loader 2500ms ease;
+  animation: loader 2000ms ease;
 width: 100%;
   height:4px;
   border-radius: 100px;
@@ -683,7 +685,6 @@ height: 100%;
   margin-bottom: 1em;
   vertical-align: middle;
   width: 50%;
-
 }
 
 @media only screen and (min-device-width: 1240px) {
