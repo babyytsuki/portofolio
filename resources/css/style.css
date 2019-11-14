@@ -217,6 +217,72 @@
     color: #FFE0F5;
   }
 
+  /* very spesharu */
+
+  .specialnavbar {
+    width: 100%;
+    height: 62px;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    background-color: #FFBAE3;
+    z-index: 999;
+  }
+
+  .specialnavbar .special-title {
+    -webkit-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
+    -moz-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
+    font-family: 'Nunito', Verdana;
+    position: relative;
+    padding: 0;
+    top: 9%;
+    left: 5%;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 2em;
+    transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
+  }
+
+  .special-title:hover {
+    color: #FFE0F5;
+    letter-spacing: 10px;
+  }
+
+  .specialnavlinks {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7em;
+    padding: 0;
+    margin: 5px 50px 0px 0px;
+    right: 0;
+    top: 0;
+    float: right;
+    position: relative;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .specialnavlinks a {
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Nunito', Verdana;
+    z-index: 9999;
+    padding: 5px 8px 3px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: color 200ms ease-in-out;
+  }
+
+  .specialnavlinks a:hover {
+    color: #FFE0F5;
+  }
+
+  /* uwu */
+
   .header {
     text-align: center;
     position: relative;
@@ -299,6 +365,7 @@
     text-decoration: none;
     font-size: 1em;
     transition: color 200ms 100ms ease, background-color 200ms 100ms ease;
+    
   }
 
   .kofibutt a:hover {
@@ -636,7 +703,7 @@ position: absolute;
 top: 0;
 left: 0;
 background: #fff;
-z-index: 999;
+z-index: 999999;
 }
 
 .loadingContainer {
@@ -662,14 +729,14 @@ height: 4px;
 border-radius: 100px;
 display: block;
 overflow: hidden;
-z-index: 99;
+z-index: 999999999;
 }
 
 .loadingbar {
-  animation: loader 2000ms ease;
+animation: loader 2000ms ease;
 width: 100%;
-  height:4px;
-  border-radius: 100px;
+height:4px;
+border-radius: 100px;
 background: #ffbae3;
 position: absolute;
 left: -100%;
