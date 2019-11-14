@@ -940,6 +940,15 @@ span {
   color: #fff;
 }
 
+.loadingContainer {
+  width: 200px;
+}
+
+.loadingbar, .loadingBarContainer {
+  height: 15px;
+}
+
+
     }
 
 
