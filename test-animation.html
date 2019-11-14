@@ -35,20 +35,20 @@
     </head>
     <body>
             <div class="splashScreen">
-                    <div class="loadingContainer">
-            
-                        <div class="loadingBox">
-                            <div class="loadingBarContainer">
-                                <div class="loadingbar"></div>
-                            </div>
-            
-                            </div>
+                <div class="loadingContainer">
+                    
+                    <div class="loadingBox">
+                        <img src="resources/images/site/new smol logo colour w border.png" class="bunny">
+                        <div class="loadingBarContainer">
+                            <div class="loadingbar"></div>
                         </div>
-            
-            
+        
+                        </div>
                     </div>
+        
+        
                 </div>
-
+            </div>
         <div class="loaded">
         <div class="navbar">
                 <a class="site-title" href="./index.html">babyytsuki</a>
@@ -152,7 +152,6 @@
             <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
         </div>
         </div>
-    </div>
         <script>
             ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
             ScrollReveal().reveal('.aboutme p', { delay: 70, scale: 0.85, reset: true });
@@ -170,7 +169,7 @@
 
     jQuery('.loadingbar').delay(500).animate({left: '0'}, 2000);
     jQuery('.loadingBox').delay(500).animate({opacity: '1'}, 500);
-    jQuery('.splashScreen').delay(2500).animate({opacity: '0'}, 500);
+    jQuery('.splashScreen').delay(2500).animate({opacity: '0', zIndex: '0'}, 500);
     jQuery('body').delay(2500).queue(function(){
         jQuery('body').addClass("visibleSplash");
 });
