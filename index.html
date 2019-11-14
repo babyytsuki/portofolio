@@ -25,8 +25,25 @@
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="./resources/js/parallaxscroll.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
 <body>
+        <div class="splashScreen">
+                <div class="loadingContainer">
+                    
+                    <div class="loadingBox">
+                        <img src="resources/images/site/new smol logo colour w border.png" class="bunny">
+                        <div class="loadingBarContainer">
+                            <div class="loadingbar"></div>
+                        </div>
+        
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+        <dic class="loaded">
         <div class="navbar">
             <a class="site-title" href="./index.html">babyytsuki</a>
                 <div class="navlinks">
@@ -128,6 +145,7 @@
          </div>
         <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
     </div>
+</dic>
     <script>
         ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
         ScrollReveal().reveal('.aboutme p', { delay: 70, scale: 0.85, reset: true });
@@ -138,10 +156,18 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
 
-/* Close/hide the sidenav */
+// close/hide the sidenav
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+// splash screen loader
+jQuery('.loadingbar').delay(500).animate({left: '0'}, 2000);
+    jQuery('.loadingBox').delay(500).animate({opacity: '1'}, 500);
+    jQuery('.splashScreen').delay(2500).animate({opacity: '0'}, 500);
+    jQuery('body').delay(2500).queue(function(){
+        jQuery('body').addClass("visibleSplash");
+});
     </script>
 </body>
 </html>
