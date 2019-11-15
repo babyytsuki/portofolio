@@ -29,10 +29,12 @@
         <script src="https://unpkg.com/popper.js@1"></script>
         <script src="https://unpkg.com/tippy.js@5"></script>
         <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     </head>
 <body>
         <div class="navbar">
-            <a class="site-title" href="./index.html">babyytsuki</a>
+            <a class="site-title tip2" data-tippy-content="im baby (ó﹏ò｡)" href="./index.html">babyytsuki</a>
                 <div class="navlinks">
                     <a href="./illustration.html">illustration</a>
                     <a href="./design.html">design</a>
@@ -77,22 +79,22 @@
                 <img src="./resources/images/site/tamamo.jpg">
             </div>
             <div class="aboutme">
-                <h2>月</h2>
-                <div class="socials">
-                    <a data-tippy-content="Tooltip" href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
-            <a href="https://www.pixiv.net/member.php?id=27555470"><img src="./resources/images/site/pixiv.png"></a>
-            <a href="https://instagram.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
-            <a href="https://twitch.tv/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
-            <a href="https://babyytsuki.storenvy.com/"><img src="./resources/images/site/shop.png"></a>
-            <a href="mailto:babyytsuki@gmail.com"><img src="./resources/images/site/email.png"></a>
+                <h2 data-aos="fade-up">月</h2>
+                <div class="socials" data-aos="fade-up" data-aos-delay="100">
+                    <a class="tip" data-tippy-content="twitter" href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
+                    <a class="tip" data-tippy-content="pixiv" href="https://www.pixiv.net/member.php?id=27555470"><img src="./resources/images/site/pixiv.png"></a>
+                    <a class="tip" data-tippy-content="instagram" href="https://instagram.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
+                    <a class="tip" data-tippy-content="twitch" href="https://twitch.tv/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
+                    <a class="tip" data-tippy-content="storenvy" href="https://babyytsuki.storenvy.com/"><img src="./resources/images/site/shop.png"></a>
+                    <a class="tip" data-tippy-content="email" href="mailto:babyytsuki@gmail.com"><img src="./resources/images/site/email.png"></a>
                 </div>
-                <p>Hi! (o´ω`o)ﾉ I'm babyytsuki and I'm an illustrator! I love drawing cute girls as well as eating cup noodles and sleeping, I don't know. </p>
-                <div class="kofibutt">
-                    <a class href="https://ko-fi.com/babyytsuki/">support me on ko-fi!</a>
+                <p data-aos="fade-up" data-aos-delay="200">Hi! (o´ω`o)ﾉ I'm babyytsuki and I'm an illustrator! I love drawing cute girls as well as eating cup noodles and sleeping, I don't know. </p>
+                <div class="kofibutt" data-aos="fade-up" data-aos-delay="300">
+                    <a class="tip2" data-tippy-content="thank you for your support! (๑•̀ㅂ•́)و✧" href="https://ko-fi.com/babyytsuki/">support me on ko-fi!</a>
                 </div>
             </div>
         </div>
-        <div class="mini-paragraph">
+        <div class="mini-paragraph" data-aos="fade-up" data-aos-delay="100">
         <h1>con schedule</h1>
                 <table>
                     <tr>
@@ -113,11 +115,12 @@
         <p>© babytsuki 2019 (´｡• ᵕ •｡`)</p>
     </div>
     <script>
-        // scroll reveal
+        /* scroll reveal
         ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
         ScrollReveal().reveal('.aboutme p', { delay: 70, scale: 0.85, reset: true });
         ScrollReveal().reveal('h2', { delay: 70, reset: true });
         ScrollReveal().reveal('.kofibutt', { delay: 70, scale: 0.85, reset: true });
+        */
     
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
@@ -137,9 +140,20 @@
         });
 
         // tippy
-        tippy('a', {
-            animation:'shift-toward',
-            inertia:'scale'
+        tippy('.tip', {
+            theme: 'mine',
+            delay: '150',
+            distance: '28',
+            followCursor: 'true',
+            placement: 'top'
+        });
+
+        tippy('.tip2', {
+            theme: 'usethis',
+            delay: '150',
+            distance: '22',
+            followCursor: 'true',
+            placement: 'bottom-start'
         });
     </script>
 </body>

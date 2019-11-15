@@ -25,12 +25,16 @@
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="./resources/js/parallaxscroll.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@5"></script>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
 <body>
         <div class="navbar">
-                <a class="site-title" href="./index.html">babyytsuki</a>
+                <a class="site-title tip2" data-tippy-content="im baby (ó﹏ò｡)" href="./index.html">babyytsuki</a>
                     <div class="navlinks">
                         <a href="./illustration.html">illustration</a>
                         <a href="./design.html">design</a>
@@ -55,14 +59,14 @@
             <hr></hr>
 
             <div class="socials">
-                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
-            <a href="https://www.pixiv.net/member.php?id=27555470"><img src="./resources/images/site/pixiv.png"></a>
-            <a href="https://instagram.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
-            <a href="https://twitch.tv/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
-            <a href="https://babyytsuki.storenvy.com/"><img src="./resources/images/site/shop.png"></a>
-            <a href="mailto:babyytsuki@gmail.com"><img src="./resources/images/site/email.png"></a>
-            <a href="https://ko-fi.com/babyytsuki"><img src="./resources/images/site/ko-fi.png"></a>
-                </div>
+                <a class="tip" data-tippy-content="twitter" href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
+                <a class="tip" data-tippy-content="pixiv" href="https://www.pixiv.net/member.php?id=27555470"><img src="./resources/images/site/pixiv.png"></a>
+                <a class="tip" data-tippy-content="instagram" href="https://instagram.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
+                <a class="tip" data-tippy-content="twitch" href="https://twitch.tv/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
+                <a class="tip" data-tippy-content="storenvy" href="https://babyytsuki.storenvy.com/"><img src="./resources/images/site/shop.png"></a>
+                <a class="tip" data-tippy-content="email" href="mailto:babyytsuki@gmail.com"><img src="./resources/images/site/email.png"></a>
+                <a class="tip2" data-tippy-content="thank you for your support! (๑•̀ㅂ•́)و✧" href="https://ko-fi.com/babyytsuki/"><img src="./resources/images/site/ko-fi.png"></a>
+            </div>
 
             <p>
             shoot me a message via DMs on <a href="https://twitter.com/babyytsuki">Twitter</a> or <a href="https://instagram.com/babyytsuki">Instagram</a>!<br>
@@ -70,7 +74,7 @@
             </p>
         </div>
 
-        <div class="paragraph" data-aos="fade-up" data-aos-delay="100">
+        <div class="paragraph" data-aos="fade-up" data-aos-delay="200">
         <h1>faq</h1>
             <hr></hr>
                 <h2>when did you start drawing?</h2>
@@ -109,6 +113,23 @@
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
+
+        // tippy
+        tippy('.tip', {
+            theme: 'mine',
+            delay: '150',
+            distance: '28',
+            followCursor: 'true',
+            placement: 'top'
+        });
+
+        tippy('.tip2', {
+            theme: 'usethis',
+            delay: '150',
+            distance: '22',
+            followCursor: 'true',
+            placement: 'top-start'
+        });
             </script>
         </body>
         </html>
