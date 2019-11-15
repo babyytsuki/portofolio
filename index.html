@@ -26,52 +26,28 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="./resources/js/parallaxscroll.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@5"></script>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css">
     </head>
 <body>
         <div class="navbar">
             <a class="site-title" href="./index.html">babyytsuki</a>
                 <div class="navlinks">
-                    <div class="dropdown">
-                        <div class="dropbtn">portfolio</div>
-                            <div class="dropdown-content">
-                                <a href="./illustration.html">illustration</a>
-                                <a href="./concept-art.html">concept art</a>
-                                <a href="./sample-merch.html">sample merch</a>
-                                <a href="./design.html">design</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="dropbtn">commissions</div>
-                             <div class="dropdown-content">
-                                <a href="./terms-and-conditions.html">terms & conditions</a>
-                                <a href="./pricing.html">pricing</a>
-                        </div>
-                    </div>
-                    <a href="./info.html">info</a>
-                    <div class="dropdown">
-                        <div class="dropbtn">shop</div>
-                             <div class="dropdown-content">
-                                <a href="https://babyytsuki.ecwid.com/">merch store</a>
-                                <a href="./">print store</a>
-                        </div>
-                    </div>
+                    <a href="./illustration.html">illustration</a>
+                    <a href="./design.html">design</a>
+                    <a href="./commissions.html">commissions</a>
+                    <a href="./contact.html">contact</a>
                 </div>
         </div>
 
         <div id="mySidenav" class="sidenav">
-            <ul>
-                <li>portfolio</li>
-                    <li><a href="./illustration.html">illustration</a></li>
-                    <li><a href="./concept-art.html">concept art</a></li>
-                    <li><a href="./sample-merch.html">sample merch</a></li>
-                    <li><a href="./design.html">design</a></li>
-                <li>commissions</li>
-                    <li><a href="./terms-and-conditions.html">terms & conditions</a></li>
-                    <li><a href="./pricing.html">pricing</a></li>
-                <li><a href="./info.html">info</a></li>
-                </ul>
+            <a href="./illustration.html">illustration</a>
+            <a href="./design.html">design</a>
+            <a href="./commissions.html">commissions</a>
+            <a href="./contact.html">contact</a>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
-          </div>
+        </div>
           <span id="menu" onclick="openNav()">≡</span>
 
         <!--
@@ -102,8 +78,8 @@
             </div>
             <div class="aboutme">
                 <h2>月</h2>
-                <div class="socialsam">
-                    <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
+                <div class="socials">
+                    <a data-tippy-content="Tooltip" href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
             <a href="https://www.pixiv.net/member.php?id=27555470"><img src="./resources/images/site/pixiv.png"></a>
             <a href="https://instagram.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
             <a href="https://twitch.tv/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
@@ -116,33 +92,55 @@
                 </div>
             </div>
         </div>
-
+        <div class="mini-paragraph">
+        <h1>con schedule</h1>
+                <table>
+                    <tr>
+                        <th>con</th>
+                        <th>date</th>
+                    </tr>
+                    <tr>
+                        <td>Comic Fiesta (KL, Malaysia)</td>
+                        <td>December 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Doujima (Singapore)</td>
+                        <td>May 2020</td>
+                    </tr>
+                </table>
+            </div>
     <div class="footer">
-        <div class="socials">
-            <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
-            <a href="https://www.pixiv.net/member.php?id=27555470"><img src="./resources/images/site/pixiv.png"></a>
-            <a href="https://instagram.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
-            <a href="https://twitch.tv/babyytsuki"><img src="./resources/images/site/twitch.png"></a>
-            <a href="https://babyytsuki.storenvy.com/"><img src="./resources/images/site/shop.png"></a>
-            <a href="mailto:babyytsuki@gmail.com"><img src="./resources/images/site/email.png"></a>
-            <a href="https://ko-fi.com/babyytsuki"><img src="./resources/images/site/ko-fi.png"></a>
-         </div>
-        <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
+        <p>© babytsuki 2019 (´｡• ᵕ •｡`)</p>
     </div>
     <script>
+        // scroll reveal
         ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
         ScrollReveal().reveal('.aboutme p', { delay: 70, scale: 0.85, reset: true });
         ScrollReveal().reveal('h2', { delay: 70, reset: true });
         ScrollReveal().reveal('.kofibutt', { delay: 70, scale: 0.85, reset: true });
     
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }       
 
-// close/hide the sidenav
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+        // toggle sidenav
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // AOS
+        window.addEventListener('load', AOS.refresh);
+            AOS.init({
+            duration: 700,
+            delay: 50,
+            easing: 'ease-in-out',
+        });
+
+        // tippy
+        tippy('a', {
+            animation:'shift-toward',
+            inertia:'scale'
+        });
     </script>
 </body>
 </html>
