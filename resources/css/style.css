@@ -85,6 +85,13 @@
   h2 {
       font-family: 'Nunito', Verdana;
       color: #FFBAE3;
+      font-weight: 500;
+  }
+
+  h3 {
+    font-family: 'Nunito', Verdana;
+    font-weight: 400;
+    margin: 0.4em 0em;
   }
 
   p {
@@ -95,6 +102,7 @@
   p a {
     font-weight: 700;
     color: #cbbae7;
+    text-decoration: none;
     transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
   }
 
@@ -166,8 +174,6 @@
   }
 
   .navbar .site-title {
-    -webkit-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
-    -moz-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
     font-family: 'Nunito', Verdana;
     position: relative;
     padding: 0;
@@ -217,72 +223,6 @@
     color: #FFE0F5;
   }
 
-  /* very spesharu */
-
-  .specialnavbar {
-    width: 100%;
-    height: 62px;
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    background-color: #FFBAE3;
-    z-index: 999;
-  }
-
-  .specialnavbar .special-title {
-    -webkit-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
-    -moz-transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
-    font-family: 'Nunito', Verdana;
-    position: relative;
-    padding: 0;
-    top: 9%;
-    left: 5%;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 2em;
-    transition: color 200ms ease-in-out, letter-spacing 400ms 150ms ease;
-  }
-
-  .special-title:hover {
-    color: #FFE0F5;
-    letter-spacing: 10px;
-  }
-
-  .specialnavlinks {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.7em;
-    padding: 0;
-    margin: 5px 50px 0px 0px;
-    right: 0;
-    top: 0;
-    float: right;
-    position: relative;
-    display: inline-flex;
-    text-align: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-  }
-
-  .specialnavlinks a {
-    -webkit-transition: color 200ms ease-in-out;
-    -moz-transition: color 200ms ease-in-out;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Nunito', Verdana;
-    z-index: 9999;
-    padding: 5px 8px 3px 8px;
-    display: flex;
-    flex-wrap: wrap;
-    transition: color 200ms ease-in-out;
-  }
-
-  .specialnavlinks a:hover {
-    color: #FFE0F5;
-  }
-
-  /* uwu */
-
   .header {
     text-align: center;
     position: relative;
@@ -306,7 +246,7 @@
     height: 50%;
     flex-direction: row;
     display: inline-flex;
-    margin: 4% 15% 4% 15%;
+    margin: 4% 15% 0% 15%;
     justify-content: center;
     float: none;
     overflow: hidden;
@@ -379,7 +319,7 @@
     width: 100%;
     height: 16%;
     background-color: #FFBAE3;
-    margin: 1em 0em 0em 0em;
+    padding: 0.4em 0em;
     z-index: 99999999;
     text-align: center;
   }
@@ -387,26 +327,21 @@
   .footer p {
     font-size: 0.8em;
     color: #fff;
-    text-align: center;
     margin: 0;
     padding-top: 0.3em; 
     padding-bottom: 0.5em;
+    text-align: center;
   }
 
   .socials {
-    text-align: center;
+    text-align: left;
     padding-top: 0.8em;
     padding-bottom: 0;
     margin: 0;
   }
 
-  .socials img,
-  .socialsam img {
+  .socials img {
     width: 2em;
-  }
-
-  .socialsam {
-    text-align: left;
   }
 
   .container {
@@ -488,29 +423,46 @@
     display: block;
   }
 
+  .main-content {
+    margin: 5% 0% 2% 0%;
+  }
+
+  .mini-paragraph {
+    width: 76%;
+    padding: 2%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: -4% 12% 0% 12%;
+  }
+
   .paragraph {
     width: 76%;
     padding: 2%;
     align-content: center;
     align-items: center;
-    margin: 5% 12% 1% 12%;
+    margin: 0% 12%;
   }
-
+ 
+  .mini-paragraph h1,
   .paragraph h1 {
     font-size: 2em;
     letter-spacing: 8px;
   }
 
+  .mini-paragraph p,
   .paragraph p {
     font-size: 1.2em;
   }
 
+  .mini-paragraph li,
   .paragraph li {
     font-size: 1.2em;
     font-family: 'Red Hat Display', Verdana;
     color: #e0b0d9;
   }
 
+  .mini-paragraph h2,
   .paragraph h2 {
     font-size: 1.5em;
     color: #BBA9DB;
@@ -678,7 +630,7 @@ span {
 
     .navbar {
       height: 110px;
-      position: absolute;
+      position: fixed;
     }
 
     .intropic {
@@ -738,6 +690,7 @@ span {
       margin: 7% 0%;
     }
 
+    .mini-paragraph em,
     .paragraph em {
       line-height: 1.2em;
     }
@@ -768,7 +721,6 @@ span {
       font-size: 2em!important;
     }
 
-    .socialsam img,
     .socials img {
       width: 5em;
     }
@@ -804,25 +756,28 @@ span {
       border-top: 5px dashed #FFBAE3;
       width: 50%;
     }
-
+    .mini-paragraph,
     .paragraph {
       width: 90%;
-      margin: 10% 5%;
+      margin: 0% 5% 2% 5%;
     }
 
+    .mini-paragraph h1,
     .paragraph h1 {
       font-size: 3.7em;
     }
 
+    .mini-paragraph h2,
     .paragraph h2 {
       font-size: 2.5em;
     }
 
+    .mini-paragraph p,
     .paragraph p {
       font-size: 1.2em;
       line-height: 1.3em;
     }
-
+    .mini-paragraph li,
     .paragraph li {
       font-size: 1.2em;
       line-height: 1.3em;
@@ -845,6 +800,10 @@ span {
       font-size: 4em;
     }
 
+    .main-content {
+    margin: 9% 0% 2% 0%;
+    }
+
 span {
   right: 35px;
   top: -24px;
@@ -852,14 +811,7 @@ span {
   font-size: 8em;
   color: #fff;
   display: block;
-  position: absolute;
-}
-
-.sidenav ul {
-  font-family: 'Nunito';
-  font-size: 1.5em;
-  list-style: none;
-  padding: 0em 1em;
+  position: fixed;
 }
 
 .sidenav {
@@ -873,14 +825,15 @@ span {
   font-size: 4em;
   background-color: hsl(0, 0%, 100%, 0.9);
   overflow-x: hidden; 
-  padding: 2em 0em;
   transition: 0.5s; 
+  padding: 20% 0%;
 }
 
 .sidenav a {
-  padding: 0em 1em;
+  text-align: center;
+  padding: 0.4em 1em;
   text-decoration: none;
-  font-size: 0.7em;
+  font-size: 1,2em;
   color: #FFBAE3;
   display: block;
   transition: 0.3s;
@@ -892,21 +845,20 @@ span {
 
 .sidenav .closebtn {
   position: absolute;
-  font-size: 1.5em;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+  font-size: 1em;
+  right: 3%;
+  top: 2%;
   background-color: #FFBAE3;
   color: #fff;
   padding: 10px 35px;
   border-radius: 25px;
-  bottom: 12%;
   transition: all 300ms ease-in-out 50ms;
 }
 
 .sidenav .closebtn:hover {
-  background-color: #CFC1E8;
   color: #fff;
+  opacity: 0;
 }
 
 
