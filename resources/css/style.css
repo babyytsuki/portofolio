@@ -607,6 +607,31 @@
     text-align: center;
   }
 
+  .tippy-tooltip.mine-theme {
+    background-color: #BBA9DB;
+    color: #f2eef8;
+    border-radius: 30px;
+    font-family: 'Nunito', Verdana;
+    font-weight: 600;
+  }
+
+  .tippy-tooltip.mine-theme .tippy-arrow {
+    display: none;
+  }
+
+  .tippy-tooltip.usethis-theme {
+    background-color: rgb(250, 242, 255);
+    color: #CFC1E8;
+    border: 2px dashed #BBA9DB;
+    border-radius: 30px;
+    font-family: 'Nunito', Verdana;
+    font-weight: 600;
+  }
+
+  .tippy-tooltip.usethis-theme .tippy-arrow {
+    display: none;
+  }
+
 @media only screen and (min-device-width: 1240px) {
 
 .sidenav,
