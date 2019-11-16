@@ -505,6 +505,33 @@
     border-radius: 15px;
   }
 
+  .butt {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 5% 0% 6% 0%;
+    width: 90%;
+    position: relative;
+    right: -5%;
+  }
+
+  .butt a {
+    background-color: #ffe3f6;
+    color: #FFBAE3;
+    font-family: 'Nunito', Verdana;
+    font-size: 1.6em;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 150ms 80ms ease, color 150ms 80ms ease;
+  }
+
+  .butt a:hover {
+    background-color: #d0c3e7;
+    color: #fff;
+  }
+
   .button {
     display: inline-flex;
     flex-flow: row nowrap;
@@ -523,9 +550,8 @@
     background-color: #ffe3f6;
     color: #FFBAE3;
     font-family: 'Nunito', Verdana;
-    font-size: 2em;
-    width: 5em;
-    padding: 3px 6px;
+    font-size: 1.6em;
+    padding: 0.2em 1em;
     border: 0;
     position: relative;
     text-decoration: none;
@@ -599,8 +625,8 @@
 
   .nothing {
     padding: 0;
-    margin: 20% 25% 10% 25%;
-    width: 50%;
+    margin: 20% 15% 5% 15%;
+    width: 70%;
     font-family: 'Nunito', Verdana;
     color: #BBA9DB;
     font-size: 3.5em;
@@ -821,8 +847,10 @@ span {
       font-size: 2.3em;
     }
 
+    .butt a,
     .button a {
       font-size: 4em;
+      border-radius: 50px;
     }
 
     .main-content {
@@ -870,20 +898,15 @@ span {
 
 .sidenav .closebtn {
   position: absolute;
-  letter-spacing: 2px;
-  font-size: 1em;
-  right: 3%;
-  top: 2%;
-  background-color: #FFBAE3;
-  color: #fff;
+  right: 1%;
+  top: 1%;
   padding: 10px 35px;
   border-radius: 25px;
   transition: all 300ms ease-in-out 50ms;
 }
 
-.sidenav .closebtn:hover {
-  color: #fff;
-  opacity: 0;
+.sidenav .closebtn img {
+  width: 50px;
 }
 
 
