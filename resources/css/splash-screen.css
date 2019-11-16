@@ -108,4 +108,7 @@ body .visibleSplash {
         margin-bottom: 40px;
     }
 
+    .loadingContainer {
+        top: 40%;
+    }
 }

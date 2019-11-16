@@ -881,7 +881,7 @@ span {
   background-color: hsl(0, 0%, 100%, 0.9);
   overflow-x: hidden; 
   transition: 0.5s; 
-  padding: 20% 0%;
+  padding: 35% 0% 0% 0%;
 }
 
 .sidenav a {
