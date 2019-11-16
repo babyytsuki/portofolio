@@ -3,7 +3,7 @@
     <head>
         <title>⋆୨୧˚babyytsuki˚୨୧⋆</title>
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-        <link href="./test-css.css" type="text/css" rel="stylesheet">
+        <link href="./resources/css/splash-screen.css" type="text/css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="57x57" href="./resources/images/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="./resources/images/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="./resources/images/favicon/apple-icon-72x72.png">
@@ -97,7 +97,7 @@
                 </div>
                 <div class="aboutme">
                     <h2>月</h2>
-                    <div class="socialsam">
+                    <div class="socials">
                         <a href="https://twitter.com/babyytsuki"><img src="./resources/images/site/twitter.png"></a>
                 <a href="https://www.pixiv.net/member.php?id=27555470"><img src="./resources/images/site/pixiv.png"></a>
                 <a href="https://instagram.com/babyytsuki"><img src="./resources/images/site/instagram.png"></a>
@@ -131,9 +131,12 @@
       document.getElementById("mySidenav").style.width = "0";
     }
 
-    jQuery('.loadingbar').delay(500).animate({left: '0'}, 2000);
-    jQuery('.loadingBox').delay(500).animate({opacity: '1'}, 500);
+    //splash screen
+    jQuery('.loadingbar').delay(500).animate({left: '0', zIndex:'0'}, 2000);
+    jQuery('.loadingBox').delay(500).animate({opacity: '1', zIndex:'0'}, 500);
     jQuery('.splashScreen').delay(2500).animate({opacity: '0', zIndex: '0'}, 500);
+    jQuery('.aboutme').delay(2500).animate({zIndex: '99999'}, 500);
+    jQuery('.navbar').delay(2500).animate({zIndex: '999999'}, 500);
     jQuery('body').delay(2500).queue(function(){
         jQuery('body').addClass("visibleSplash");
 });
