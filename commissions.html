@@ -21,12 +21,17 @@
         <meta name="msapplication-TileImage" content="./resources/images/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@5"></script>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="main-content">
             <div class="navbar">
-            <a class="site-title" href="./index.html">babyytsuki</a>
+            <a class="site-title tip2" data-tippy-content="im baby (ó﹏ò｡)" href="./index.html">babyytsuki</a>
                 <div class="navlinks">
                     <a href="./illustration.html">illustration</a>
                     <a href="./design.html">design</a>
@@ -40,16 +45,18 @@
             <a href="./design.html">design</a>
             <a href="./commissions.html">commissions</a>
             <a href="./contact.html">contact</a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <img src="resources/images/site/close.png">
+            </a>
         </div>
           <span id="menu" onclick="openNav()">≡</span>
 
         <!-- owo why are yew wooking at mwai codes owo? -->
 
-        <div class="paragraph">
+        <div class="paragraph" data-aos="fade-up">
                 <h1>commission pricelist</h1>
                 <hr></hr>
-                <p class="special">prices listed here are only guidelines! extra details will be charged accordingly.</p>
+                <p class="special">prices listed here are only guidelines! you might be charged for extra details accordingly.</p>
                     <div class="sample-container">
                         <div class="sample-pic">
                             <img src="./resources/images/site/illustrations/hk416.jpg">
@@ -61,7 +68,7 @@
                                 <p style="text-align: right"><strong>full body</strong> from USD40</p>
                         </div>
                     </div>
-                    <div class="sample-container">
+                    <div class="sample-container" data-aos="fade-up" data-aos-delay="100">
                         <div class="sample-desc">
                             <h2>character illust</h2>
                             <p><strong>headshot</strong> from USD30</p>
@@ -74,7 +81,7 @@
                     </div>
             </div>
 
-        <div class="paragraph">
+        <div class="paragraph" data-aos="fade-up" data-aos-delay="100">
             <h1>terms & conditions</h1>
             <hr></hr>
                 <p class="need-margin"><em>Please note that everything stated here is applicable to personal-use commissions only. For commercial work, please contact me directly at <a href="mailto:babyytsuki@gmail.com"><b>babyytsuki@gmail.com</b></a>.</em></p>
@@ -102,16 +109,36 @@
         <p> :⁺˚*･༓☾ © babytsuki 2019 ☽༓･*˚⁺‧: </p>
     </div>
     <script>
-        ScrollReveal().reveal('.button', { delay: 70, scale: 0.85, reset: true });
-        ScrollReveal().reveal('.paragraph p', { delay: 70, scale: 0.85, reset: true });
-        ScrollReveal().reveal('h2', { delay: 70, reset: true });
-        ScrollReveal().reveal('ol', { delay: 70, reset: true });
+        // AOS
+        window.addEventListener('load', AOS.refresh);
+            AOS.init({
+            duration: 700,
+            delay: 50,
+            easing: 'ease-in-out',
+        });
 
+        // tippy
+        tippy('.tip', {
+            theme: 'mine',
+            delay: '150',
+            distance: '28',
+            followCursor: 'true',
+            placement: 'top'
+        });
+
+        tippy('.tip2', {
+            theme: 'usethis',
+            delay: '150',
+            distance: '22',
+            followCursor: 'true',
+            placement: 'bottom-start'
+        });
+
+        // open/close nav 
         function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
 
-/* Close/hide the sidenav */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }

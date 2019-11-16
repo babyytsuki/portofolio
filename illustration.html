@@ -23,6 +23,10 @@
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@5"></script>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
     <body>
             <div class="navbar">
@@ -40,7 +44,9 @@
             <a href="./design.html">design</a>
             <a href="./commissions.html">commissions</a>
             <a href="./contact.html">contact</a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <img src="resources/images/site/close.png">
+            </a>
         </div>
           <span id="menu" onclick="openNav()">≡</span>
 
@@ -61,7 +67,7 @@
             <div class="column">
 
                 <a href="#hk416">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Girls Frontline - HK416">
                         <img src="./resources/images/site/illustrations/hk416.jpg" class="thumbnail">
                     </div>
                 </a>
@@ -70,7 +76,7 @@
                     </a>
 
                 <a href="#madokatrad">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Mahou Shoujo Madoka Magica - Kaname Madoka"> 
                         <img src="./resources/images/site/illustrations/madokatrad.jpg" class="thumbnail">
                     </div>
                 </a>
@@ -79,7 +85,7 @@
                     </a>
 
                 <a href="#menhera-chan">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="OC - Menhera-chan">
                         <img src="./resources/images/site/illustrations/menhera chan.png" class="thumbnail">
                     </div>
                 </a>
@@ -92,7 +98,7 @@
             <div class="column">
 
                 <a href="#sailormoon">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Sailor Moon - Tsukino Usagi">
                         <img src="./resources/images/site/illustrations/sailor moon final.jpg" class="thumbnail">
                     </div>
                 </a>
@@ -101,7 +107,7 @@
                     </a>
 
                 <a href="#sailormoontrad">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Sailor Moon Sketch">
                         <img src="./resources/images/site/illustrations/sailormoontrad.jpg" class="thumbnail">
                     </div>
                 </a>
@@ -110,7 +116,7 @@
                     </a>
 
                 <a href="#ump9">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Girls Frontline - UMP9">
                         <img src="./resources/images/site/illustrations/ump9.png" class="thumbnail">
                     </div>
                 </a>
@@ -123,7 +129,7 @@
             <div class="column">
 
                 <a href="#tamamo">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Fate GO - Summer Tamamo">
                         <img src="./resources/images/site/illustrations/tamamo copy.jpg" class="thumbnail">
                     </div>
                 </a>
@@ -132,7 +138,7 @@
                     </a>
 
                 <a href="#platelet">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Hataraku Saibou - Platelet">
                         <img src="./resources/images/site/illustrations/platelet.jpg" class="thumbnail">
                     </div>
                 </a>
@@ -141,7 +147,7 @@
                     </a>
 
                 <a href="#emidtiys">
-                    <div class="overlay pink" data-aos="fade-up">
+                    <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content="Friend's OC DTIYS">
                         <img src="./resources/images/site/illustrations/emidtiys.jpg" class="thumbnail">
                     </div>
                 </a>
@@ -169,6 +175,23 @@
         function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
+
+// tippy
+tippy('.tip', {
+            theme: 'mine',
+            delay: '150',
+            distance: '28',
+            followCursor: 'true',
+            placement: 'top'
+        });
+
+        tippy('.tip2', {
+            theme: 'usethis',
+            delay: '150',
+            distance: '22',
+            followCursor: 'true',
+            placement: 'bottom-start'
+        });
 
 /* Close/hide the sidenav */
 function closeNav() {

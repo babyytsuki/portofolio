@@ -23,6 +23,10 @@
         <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@5"></script>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </head>
     <body>
             <div class="navbar">
@@ -40,7 +44,9 @@
             <a href="./design.html">design</a>
             <a href="./commissions.html">commissions</a>
             <a href="./contact.html">contact</a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <img src="resources/images/site/close.png">
+            </a>
         </div>
           <span id="menu" onclick="openNav()">≡</span>
 
@@ -71,7 +77,7 @@
                 there's nothing here... yet
             </div>
 
-        <div class="button" data-aos="fade-up">
+        <div class="button" data-aos="fade-up" data-aos-delay="100">
             <a href="./illustration.html">prev</a>
         </div>
 
@@ -89,6 +95,23 @@
         function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
+
+// tippy
+tippy('.tip', {
+            theme: 'mine',
+            delay: '150',
+            distance: '28',
+            followCursor: 'true',
+            placement: 'top'
+        });
+
+        tippy('.tip2', {
+            theme: 'usethis',
+            delay: '150',
+            distance: '22',
+            followCursor: 'true',
+            placement: 'bottom-start'
+        });
 
 /* Close/hide the sidenav */
 function closeNav() {

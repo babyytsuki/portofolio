@@ -2,14 +2,14 @@ art gallery:
         <!--
         <div class="row"></div>
             
-            <a href="#id">
-                <div class="overlay pink" data-aos="fade-up">
-                    <img src="" class="thumbnail">
+            <a href="#">
+                <div class="overlay pink tip2" data-aos="fade-up" data-tippy-content=""> 
+                    <img src="./resources/images/site/illustrations/..." class="thumbnail">
                 </div>
             </a>
-                <a href="#_" class="lightbox" id="id">
-                    <img src="">
-                    </a>    
+                <a href="#_" class="lightbox" id="">
+                    <img src="./resources/images/site/illustrations/...">
+                </a>
                     -->
 
 gallery 'next' and 'prev' button:
