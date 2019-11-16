@@ -1,0 +1,111 @@
+/* splash screen css */ 
+
+@keyframes loader {
+    0% {
+        width: 0;
+   }
+    20% {
+        width: 10%;
+   }
+    25% {
+        width: 24%;
+   }
+    43% {
+        width: 41%;
+   }
+    56% {
+        width: 50%;
+   }
+    71% {
+        width: 60%;
+   }
+    80% {
+        width: 79%;
+   }
+    94% {
+        width: 86%;
+   }
+
+    100% {
+        width: 100%;
+   }
+}
+
+body .visibleSplash {
+	overflow: visible !important;
+}
+
+.splashScreen {
+	width: 100vw;
+ 	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+    overflow: cover;
+    z-index: 999999999;
+}
+
+.loadingContainer {
+    width: 100px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	overflow: hidden;
+}
+
+.loadingBox {
+	width: 100%;
+	height: 100%;
+    opacity: 0;
+}
+
+.loadingBarContainer {
+	width: 100%;
+	background: #ffeaf7;
+    height: 4px;
+    border-radius: 100px;
+	display: block;
+    overflow: hidden;
+}
+.loadingbar {
+    animation: loader 2500ms ease;
+	width: 100%;
+    height:4px;
+    border-radius: 100px;
+	background: #ffbae3;
+	position: relative;
+	left: -100%;
+}
+
+.loaded {
+	width: 100%;
+	height: 100%;
+}
+
+.bunny {
+    position: relative;
+    margin-bottom: 1em;
+    vertical-align: middle;
+    width: 50%;
+
+}
+
+@media only screen and (max-device-width: 767px) {
+
+    .loadingContainer {
+        width: 200px;
+    }
+
+    .loadingbar, .loadingBarContainer {
+        height: 15px;
+    }
+
+    .bunny {
+        width: 130px;
+        margin-bottom: 40px;
+    }
+
+}

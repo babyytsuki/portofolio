@@ -320,7 +320,7 @@
     height: 16%;
     background-color: #FFBAE3;
     padding: 0.4em 0em;
-    z-index: 99999999;
+    z-index: 99999;
     text-align: center;
   }
 
@@ -639,6 +639,7 @@
     border-radius: 30px;
     font-family: 'Nunito', Verdana;
     font-weight: 600;
+    z-index: 9999999;
   }
 
   .tippy-tooltip.mine-theme .tippy-arrow {
@@ -652,6 +653,7 @@
     border-radius: 30px;
     font-family: 'Nunito', Verdana;
     font-weight: 600;
+    z-index: 9999999;
   }
 
   .tippy-tooltip.usethis-theme .tippy-arrow {
@@ -860,7 +862,7 @@ span {
 span {
   right: 35px;
   top: -24px;
-  z-index: 99999;
+  z-index: 9999999;
   font-size: 8em;
   color: #fff;
   display: block;
@@ -908,6 +910,11 @@ span {
 .sidenav .closebtn img {
   width: 50px;
 }
+
+.tippy-tooltip.mine-theme,
+.tippy-tooltip.usethis-theme {
+  font-size: 2em;
+  padding: 8px 18px;
 
 
     }
