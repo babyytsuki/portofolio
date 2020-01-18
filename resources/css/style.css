@@ -156,7 +156,7 @@ hr {
 
 ::-moz-selection,
 ::selection {
-  color: #fff;
+  color: #fff!important;
   background: #FFBAE3;
 }
 
@@ -233,7 +233,7 @@ hr {
 }
 
 .parallax-window {
-  min-height: 630px;
+  min-height: 800px;
   background: transparent;
 }
 
