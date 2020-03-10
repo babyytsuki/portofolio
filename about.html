@@ -34,19 +34,9 @@
         <link href="./resources/css/splash-screen.css" rel="stylesheet" type="text/css">
     </head>
 <body>
-    <div class="splashScreen">
-        <div class="loadingContainer">
-            <div class="loadingBox">
-                <img src="resources/images/site/new smol logo colour w border.png" class="bunny">
-                <div class="loadingBarContainer">
-                    <div class="loadingbar"></div>
-                </div>
-            </div>
-        </div>
         
         
     </div>
-    <div class="loaded">
         <div class="navbar">
             <a class="site-title tip2" data-tippy-content="im baby (ó﹏ò｡)" href="./index.html">tsuukidoki</a>
                 <div class="navlinks">
@@ -93,7 +83,7 @@
     <div class="footer">
         <p>© tsuukidoki 2020 (´｡• ᵕ •｡`)</p>
     </div>
-</div>
+
     <script>
     
         function openNav() {
@@ -129,16 +119,6 @@
             followCursor: 'true',
             placement: 'bottom-start'
         });
-
-        //splash screen
-    jQuery('.loadingbar').delay(500).animate({left: '0', zIndex:'0'}, 2000);
-    jQuery('.loadingBox').delay(500).animate({opacity: '1', zIndex:'0'}, 500);
-    jQuery('.splashScreen').delay(2500).animate({opacity: '0', zIndex: '0'}, 500);
-    jQuery('.aboutme').delay(2500).animate({zIndex: '999'}, 500);
-    jQuery('.navbar').delay(2500).animate({zIndex: '9999'}, 500);
-    jQuery('body').delay(2500).queue(function(){
-        jQuery('body').addClass("visibleSplash");
-    });
     </script>
 </body>
 </html>
