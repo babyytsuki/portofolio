@@ -237,6 +237,16 @@ hr {
   background: transparent;
 }
 
+.fullheight {
+  height: 95.5vh;
+}
+
+.fullheight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .frontdesc {
   width: 70%;
   height: 50%;
