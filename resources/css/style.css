@@ -264,7 +264,7 @@ hr {
 }
 
 .frontdesc {
-  width: 70%;
+  width: 76%;
   height: 90vh;
   flex-direction: row;
   display: inline-flex;
@@ -338,11 +338,11 @@ hr {
   display: block;
   bottom: 0;
   width: 100%;
-  height: 16%;
   background-color: #FFBAE3;
   padding: 0.4em 0em;
   z-index: 99999;
   text-align: center;
+  position: fixed;
 }
 
 .footer p {
@@ -457,7 +457,8 @@ hr {
   margin: -4% 12% 0% 12%;
 }
 
-.paragraph {
+.paragraph,
+.contact {
   width: 76%;
   padding: 2%;
   align-content: center;
@@ -466,25 +467,29 @@ hr {
 }
  
 .mini-paragraph h1,
-.paragraph h1 {
+.paragraph h1,
+.contact h1 {
   font-size: 2em;
   letter-spacing: 8px;
 }
 
 .mini-paragraph p,
-.paragraph p {
+.paragraph p,
+.contact p {
   font-size: 1.2em;
 }
 
 .mini-paragraph li,
-.paragraph li {
+.paragraph li,
+.contact li {
   font-size: 1.2em;
   font-family: 'Red Hat Display', Verdana;
   color: #e0b0d9;
 }
 
 .mini-paragraph h2,
-.paragraph h2 {
+.paragraph h2,
+.contact h2 {
   font-size: 1.5em;
   color: #BBA9DB;
 }
@@ -718,6 +723,7 @@ hr {
   .frontdesc {
     width: 100%;
     margin: 5% 0%;
+    flex-wrap: wrap;
   }
 
   .menuicon {
@@ -731,8 +737,14 @@ hr {
   }
 
   .intropic {
-    display: none;
     overflow: hidden;
+    width: 100%;
+    height: 40%;
+    border-radius: 0;
+  }
+
+  .intropic img {
+    object-position: top;
   }
 
   .header {
@@ -745,12 +757,6 @@ hr {
     display: none;
   }
 
-  .aboutme {
-    width: 100%;
-    border-radius: 0;
-    overflow: hidden;
-  }
-
   .navbar .site-title {
     font-size: 4.2em;
     position: relative;
@@ -759,14 +765,25 @@ hr {
   }
 
   .kofibutt {
-    border-radius: 25px;
     padding: 0.2em 0.8em 0em 0em;
     margin: 0em 0em 3em 0em;
     font-size: 3em;
   }
 
+  .kofibutt a {
+    border-radius: 100px;
+  }
+
+  .aboutme {
+    width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    height: 45%;
+    margin-top: -303px;
+  }
+
   .aboutme p {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .aboutme h2 {
@@ -788,7 +805,8 @@ hr {
   }
 
   .mini-paragraph em,
-  .paragraph em {
+  .paragraph em,
+  .contact em {
     line-height: 1.2em;
   }
 
@@ -857,35 +875,48 @@ hr {
   .mini-paragraph,
   .paragraph {
     width: 90%;
-    margin: 0% 5% 2% 5%;
+    margin: -30% 5% 10% 5%;
+  }
+
+  .contact {
+    margin: 0% 5%;
+    padding-bottom: 10%;
   }
 
   .mini-paragraph h1,
-  .paragraph h1 {
+  .paragraph h1,
+  .contact h1 {
     font-size: 3.7em;
   }
 
   .mini-paragraph h2,
-  .paragraph h2 {
+  .paragraph h2,
+  .contact h2 {
     font-size: 2.5em;
   }
 
   .mini-paragraph p,
   .paragraph p {
     font-size: 1.2em;
-    line-height: 1.3em;
+    line-height: 2em;
+  }
+
+  .contact p {
+    font-size: 2.2em;
+    line-height: 2em;
   }
 
   .mini-paragraph li,
-  .paragraph li {
+  .paragraph li,
+  .contact li {
     font-size: 1.2em;
-    line-height: 1.3em;
+    line-height: 2em;
   }
 
   .butt a,
   .button a {
-    font-size: 4em;
-    border-radius: 50px;
+    font-size: 3em;
+    border-radius: 100px;
   }
 
   .main-content {
