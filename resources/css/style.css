@@ -544,7 +544,7 @@ hr {
   font-size: 1.6em;
   padding: 0.2em 1em;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 30px;
   transition: background-color 150ms 80ms ease, color 150ms 80ms ease;
 }
 
@@ -577,7 +577,7 @@ hr {
   position: relative;
   text-decoration: none;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 30px;
   transition: background-color 150ms 80ms ease, color 150ms 80ms ease;
 }
 
