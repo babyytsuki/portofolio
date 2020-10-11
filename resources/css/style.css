@@ -51,6 +51,15 @@
   src: local('Red Hat Display It'), local('RedHatDisplay-Italic'), url(https://fonts.gstatic.com/s/redhatdisplay/v1/8vIS7wUr0m80wwYf0QCXZzYzUoTg-A6jTY_vCk5Y.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans SC Regular'), local('NotoSansSC-Regular'), url(https://fonts.gstatic.com/s/notosanssc/v11/k3kXo84MPvpLmixcA63oeALhLOCT-xWNm8Hqd37g1OkDRZe7lR4sg1IzSy-MNbE9VH8V.4.woff2) format('woff2');
+  unicode-range: U+1f1e9-1f1f5, U+1f1f7-1f1ff, U+1f21a, U+1f232, U+1f234-1f237, U+1f250-1f251, U+1f300, U+1f302-1f308, U+1f30a-1f311, U+1f315, U+1f319-1f320, U+1f324, U+1f327, U+1f32a, U+1f32c-1f32d, U+1f330-1f357, U+1f359-1f37e;
+}
   
   /* 
     primary: #FFBAE3
@@ -268,7 +277,7 @@ hr {
   height: 90vh;
   flex-direction: row;
   display: inline-flex;
-  margin: 10% 15% 0% 15%;
+  margin: 10% 12% 0% 12%;
   justify-content: center;
   float: none;
   overflow: hidden;
@@ -303,9 +312,9 @@ hr {
 }
 
 .aboutme h2 {
-  font-family: 'Ma Shan Zheng', cursive;
+  font-family: 'Noto Sans SC', Helvetica;
   font-size: 3em;
-  margin: 20% 0% 7% 0%;
+  margin: 20% 0% 2% 0%;
   padding: 0;
 }
 
