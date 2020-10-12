@@ -106,6 +106,7 @@ h3 {
 p {
   font-family: 'Red Hat Display', Verdana;
   color: #e0b0d9;
+  text-align: justify;
 }
 
 p a {
@@ -303,33 +304,11 @@ hr {
   object-fit: cover;
 }
 
-.aboutme {
-  background-color: #FFE0F5;
-  width: 50%;
-  padding: 10% 5% 0% 5%;
-  height: auto;
-  border-radius: 0px 15px 15px 0px;
-}
-
-.aboutme h2 {
-  font-family: 'Noto Sans SC', Helvetica;
-  font-size: 3em;
-  margin: 20% 0% 2% 0%;
-  padding: 0;
-}
-
-.aboutme p {
-  color: rgb(201, 154, 194);
-  text-align: left;
-  font-size: 1.2em;
-  margin-bottom: 1.8em;
-}
-
 .kofibutt a {
   -webkit-transition: color 200ms 100ms ease, background-color 200ms 100ms ease;
   -moz-transition: color 200ms 100ms ease, background-color 200ms 100ms ease;
-  background-color: #ded3f0;
-  color: #BBA9DB;
+  background-color: #F89AD2;
+  color: #fff;
   border-radius: 20px;
   padding: 0.5em 1em 0.5em 1em;
   margin: 2em 0em 0em 0em;
@@ -340,7 +319,7 @@ hr {
 
 .kofibutt a:hover {
   color: #fff;
-  background-color: #CFC1E8;
+  background-color: #A8AADA;
 }
 
 .footer {
@@ -467,7 +446,7 @@ hr {
 }
 
 .paragraph,
-.contact {
+.aboutme {
   width: 76%;
   padding: 2%;
   align-content: center;
@@ -477,20 +456,24 @@ hr {
  
 .mini-paragraph h1,
 .paragraph h1,
-.contact h1 {
+.aboutme h1 {
   font-size: 2em;
   letter-spacing: 8px;
 }
 
 .mini-paragraph p,
 .paragraph p,
-.contact p {
+.aboutme p {
   font-size: 1.2em;
+}
+
+.aboutme p {
+  margin-bottom: 32px;
 }
 
 .mini-paragraph li,
 .paragraph li,
-.contact li {
+.aboutme li {
   font-size: 1.2em;
   font-family: 'Red Hat Display', Verdana;
   color: #e0b0d9;
@@ -498,7 +481,7 @@ hr {
 
 .mini-paragraph h2,
 .paragraph h2,
-.contact h2 {
+.aboutme h2 {
   font-size: 1.5em;
   color: #BBA9DB;
 }
@@ -740,9 +723,18 @@ hr {
     position: absolute;
   }
 
+  span#menu {
+    top: 0px;
+  }
+
   .navbar {
-    height: 110px;
+    height: 150px;
+    padding-top: 16px;
     position: fixed;
+  }
+
+  .faq {
+    margin-bottom: 15%!important;
   }
 
   .intropic {
@@ -781,23 +773,8 @@ hr {
 
   .kofibutt a {
     border-radius: 100px;
-  }
-
-  .aboutme {
-    width: 100%;
-    border-radius: 0;
-    overflow: hidden;
-    height: 45%;
-    margin-top: -303px;
-  }
-
-  .aboutme p {
-    font-size: 2.5em;
-  }
-
-  .aboutme h2 {
-    font-size: 6em;
-    margin: 0.2em 0em 0.4em 0em;
+    padding: 26px 64px;
+    font-size: 33px;
   }
 
   .row {
@@ -815,7 +792,7 @@ hr {
 
   .mini-paragraph em,
   .paragraph em,
-  .contact em {
+  .aboutme em {
     line-height: 1.2em;
   }
 
@@ -854,16 +831,17 @@ hr {
   }
 
   .footer {
-    height: 100px;
+    height: 116px;
     bottom: 0;
     padding: 24px 0;
+    font-size: 22px;
   }
 
   .footer p {
     font-size: 1.5em;
   }
 
-  .menu{
+  .menu {
     position: absolute;
     display: block;
     color: #FFF;
@@ -887,39 +865,38 @@ hr {
     margin: -30% 5% 10% 5%;
   }
 
-  .contact {
-    margin: 0% 5%;
-    padding-bottom: 10%;
+  .aboutme {
+    margin: 0;
+    padding: 5% 6% 22% 6%;
+    width: 100%;
   }
 
   .mini-paragraph h1,
   .paragraph h1,
-  .contact h1 {
+  .aboutme h1 {
     font-size: 3.7em;
   }
 
   .mini-paragraph h2,
   .paragraph h2,
-  .contact h2 {
+  .aboutme h2 {
     font-size: 2.5em;
   }
 
-  .mini-paragraph p,
-  .paragraph p {
-    font-size: 1.2em;
-    line-height: 2em;
-  }
-
-  .contact p {
+  .aboutme p {
     font-size: 2.2em;
     line-height: 2em;
   }
 
   .mini-paragraph li,
   .paragraph li,
-  .contact li {
+  .aboutme li {
     font-size: 1.2em;
     line-height: 2em;
+  }
+
+  .button {
+    margin: 8% 0% 16% 0%;
   }
 
   .butt a,
@@ -958,7 +935,7 @@ hr {
   }
 
   .sidenav a:hover {
-    color: #acacac;
+    color: #A8AADA;
   }
 
   .sidenav .closebtn {
